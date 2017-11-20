@@ -1,0 +1,146 @@
+
+/*顶部导航栏*/
+header{
+    position:fixed;
+    top:0px;
+    left: 0;
+    width: 100%;
+    height: 40px;    
+    background: #F0F0F0;
+    .back{
+        position: absolute;
+        left: 10px;
+        top: 0;
+        width: 25px;
+        height: 39px;
+        background: url("../images/jd-sprites.png") no-repeat -50px 0px;
+        transform:scale(0.6);
+    }
+    .search{
+        width: 100%;
+        height: 100%;
+        padding:3px 50px;
+        box-sizing:border-box;
+        input {
+            width: 100%;
+            height: 100%;
+            border-radius:5px;
+            padding:2px 5px;
+            box-sizing:border-box;
+            font-size:12px;
+        }
+       
+    }
+    .menu {
+        position: absolute;
+        right: 8px;
+        top: 0;
+        width: 41px;
+        height: 37px;
+        background: url("../images/jd-sprites.png") no-repeat -120px 0px;
+        transform:scale(0.5);
+    }
+}
+.main {
+    display:flex;
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top:45px;
+    box-sizing:border-box;
+}
+/* 侧面固定导航*/
+nav {
+    font-size:14px;
+    width: 90px;
+    overflow: hidden;
+    ul{
+        width: 100%;
+    }
+    li{
+        width:100%;
+        height:50px;
+        background: #F3F4F6;
+        text-align:center;
+        line-height: 50px;
+        margin-top:-1px;
+        border:1px solid #ccc;
+    }
+    li:first-child{
+        background: #fff;
+        border:0;
+        a{
+            color:#D2703C;
+        }
+    }
+    a{
+        color:#333;
+        font-size:14px;
+    }
+}
+/*热门推荐*/
+.goods {
+    flex:1;
+    overflow-y:auto;
+    height:100%;
+    background: #fff;
+    padding:0px 10px 30px 15px;
+
+}
+.hot {
+    ul{
+        width: 100%;
+        font-size:0;
+        border-top:1px solid #ccc;
+        border-left:1px solid #ccc;
+        box-sizing:border-box;
+        font-size:0;
+        li{
+            display:inline-block;
+            height: 50px;;
+            width: 33.33%;
+            font-size:14px;
+            text-align:center;
+            line-height: 50px;
+            border-right:1px solid #ccc;
+            border-bottom:1px solid #ccc;
+            box-sizing:border-box;
+            a{
+                color:#666;
+            }
+        }
+        
+    }
+    
+}
+.h4 {
+    font-size:12px;
+    font-weight:700;
+     padding-top:20px;
+     padding-bottom:10px;
+     color:#666;
+ }
+ .guide {
+    ul{
+        width: 100%;
+        font-size:0;
+    }
+    li{
+        width: 100%;
+        a {
+            display:inline-block;
+            text-align:center;
+            width: 33.33%;
+            color:#333;
+        }
+        img {
+            width: 100%;
+            margin-bottom:5px;
+        }
+        span {
+            font-size:12px;
+        }
+    }
+ }

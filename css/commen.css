@@ -1,0 +1,35 @@
+body,h1,h2,h3,h4,h5,h6,div,p,ul,ol,dl,img,li,a {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration:none;
+}
+li {
+    list-style:none;
+}
+.fl{
+    float:left;
+}
+.fr {
+    float:right;
+}
+img {
+    vertical-align:middle;
+}
+h1,h2,h3,h4,h5,h6,b,i {
+    font-style:normal;
+    font-weight:normal;
+}
+/*清除浮动*/
+.clearfix:after{
+    content:'.';
+    display:block;
+    height:0;
+    line-height:0;
+    visibility:hidden;
+    clear:both;
+}
+.clearfix {
+    zoom:1;
+}
